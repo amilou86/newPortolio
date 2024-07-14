@@ -1,0 +1,28 @@
+@import "../../index.css";
+
+.navbar {
+    width: 100%;
+    /* Ensure Navbar spans entire width */
+    height: 100px;
+    background-color: #008080;
+
+    .wrapper {
+        max-width: 1366px;
+        margin: 0 auto;
+        /* Center content within Navbar */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .social {
+            display: flex;
+            gap: 20px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
