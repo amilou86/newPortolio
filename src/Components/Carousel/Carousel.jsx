@@ -15,6 +15,39 @@ const BREAKPOINTS = {
     lg: 1024,
 };
 
+const items = [
+    {
+        id: 1,
+        url: HRD2,
+        category: "React.js",
+        title: "Dental Practice",
+        description:
+            "Full website for a dental practice, built with React.js. Submit an application form to register as a patient, explore services offered, meet the team and read patient testimonials.",
+        deploymentLink: "https://marvelous-alfajores-6e8bac.netlify.app/",
+        githubLink: "https://github.com/amilou86/Dentist"
+    },
+    {
+        id: 2,
+        url: roama,
+        category: "Collab",
+        title: "Roama",
+        description:
+            "Create an account and explore our travel themed social media app. This was my second group collaboration project. Search friends, view and create your own posts.",
+        deploymentLink: "https://main--roama.netlify.app/",
+        githubLink: "https://github.com/amilou86/Roama.git"
+    },
+    {
+        id: 3,
+        url: calevent,
+        category: "Monitors",
+        title: "CalEvent",
+        description:
+            "First group collaboration project. Event search, fetch and suggestion app, built with JavaScript and server APIs.",
+        deploymentLink: "https://abdalla-diaai.github.io/calevent/",
+        githubLink: "https://github.com/abdalla-diaai/calevent.git"
+    }
+];
+
 const CardCarousel = () => {
     const [width, setWidth] = useState(0);
     const [offset, setOffset] = useState(0);
@@ -134,36 +167,3 @@ const Card = ({ url, category, title, description, deploymentLink, githubLink })
 };
 
 export default CardCarousel;
-
-const items = [
-    {
-        id: 1,
-        url: HRD2,
-        category: "React.js",
-        title: "Dental Practice",
-        description:
-            "Full website for a dental practice, built with React.js. Submit an application form to register as a patient, explore services offered, meet the team and read patient testimonials.",
-        deploymentLink: "https://marvelous-alfajores-6e8bac.netlify.app/",
-        githubLink: "https://github.com/amilou86/Dentist"
-    },
-    {
-        id: 2,
-        url: roama,
-        category: "Collab",
-        title: "Roama",
-        description:
-            "Create an account and explore our travel themed social media app. This was my second group collaboration project. Search friends, view and create your own posts.",
-        deploymentLink: "https://main--roama.netlify.app/",
-        githubLink: "https://github.com/amilou86/Roama.git"
-    },
-    {
-        id: 3,
-        url: calevent,
-        category: "Monitors",
-        title: "CalEvent",
-        description:
-            "First group collaboration project. Event search, fetch and suggestion app, built with JavaScript and server APIs.",
-        deploymentLink: "https://abdalla-diaai.github.io/calevent/",
-        githubLink: "https://github.com/abdalla-diaai/calevent.git"
-    }
-];

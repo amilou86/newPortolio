@@ -1,0 +1,38 @@
+// .flex {
+//     /* Default styles */
+// }
+
+// @media (max-width: 768px) {
+//     .flex {
+//         flex-direction: column;
+//         /* Stack elements on mobile */
+//     }
+
+//     .w-full {
+//         width: 100%;
+//         /* Ensure full width on mobile */
+//     }
+
+//     .max-w-md {
+//         max-width: unset;
+//         /* Remove unnecessary max-width on mobile */
+//     }
+
+//     /* Add more responsive styles based on your needs */
+// }
+
+/* OppoScroll.module.css */
+.h-screen {
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .h-screen {
+        height: auto;
+        /* Adjust height as needed */
+    }
+
+    .Images {
+        display: none;
+    }
+}

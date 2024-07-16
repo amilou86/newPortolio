@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
-import { useRef } from "react";
 import './OppoScroll.scss'
+import { useRef } from "react";
 import amiOrange2 from '../../Components/assets/amiOrange2.png'
 import developer from '../../Components/assets/developer.png'
 import amiOrange from '../../Components/assets/amiOrange.png'
