@@ -1,5 +1,6 @@
 import './Navbar.scss';
 import { motion } from 'framer-motion';
+import { FaWhatsappSquare, FaGithub, FaEnvelope, FaLinkedinIn } from "react-icons/fa";  // Changed MdOutlineMail to FaEnvelope
 import github from '../../Components/assets/github.png';
 import instagram from '../../Components/assets/instagram.png';
 import twitter from '../../Components/assets/twitter.jpeg';
@@ -16,12 +17,13 @@ const Navbar = () => {
                     transition={{ duration: 0.5 }}
                 />
                 <div className="social">
-                    <a href="#"><img src={instagram} alt="instagram logo" /></a>
-                    <a href="#"><img src={github} alt="github logo" /></a>
-                    <a href="#"><img src={twitter} alt="twitter logo" /></a>
+                    <a href="https://wa.me/+447703785849"> <FaWhatsappSquare /></a>
+                    <a href="https://github.com/amilou86"> <FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/ami-edwards-639b94248/"> <FaLinkedinIn /></a>
+                    <a href="mailto: amiedwards86@gmail.com"> <FaEnvelope /></a> {/* Changed to FaEnvelope */}
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
