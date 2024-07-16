@@ -6,6 +6,8 @@ import Hero from "./Components/Hero/Hero.jsx";
 import ParallaxRain from './Components/Parallax/Parallax.jsx';
 import Carousel from './Components/Carousel/Carousel.jsx'
 import ParallaxPortfolio from './Components/ParallaxPortfolio/ParallaxPortfolio.jsx'
+import RevealLinks from './Components/RevealLinks/RevealLinks.jsx'
+
 
 function App() {
   return (
@@ -26,9 +28,8 @@ function App() {
       <section >
         <Carousel />
       </section>
-      {/* <Portfolio /> */}
       <section id="Contact">
-        {/* <Contact /> */}
+        <RevealLinks />
       </section>
     </>
   );
