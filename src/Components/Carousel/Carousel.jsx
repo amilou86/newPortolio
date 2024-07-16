@@ -108,7 +108,7 @@ const CardCarousel = () => {
 const Card = ({ url, category, title, description, deploymentLink, githubLink }) => {
     return (
         <div
-            className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
+            className="relative shrink-0 cursor-pointer rounded-2xl bg-[#FF6F61] shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
             style={{
                 width: CARD_WIDTH,
                 height: CARD_HEIGHT,
@@ -123,10 +123,10 @@ const Card = ({ url, category, title, description, deploymentLink, githubLink })
                     {category}
                 </span>
                 <p className="my-2 text-3xl font-bold">{title}</p>
-                <p className="text-lg text-slate-300">{description}</p>
+                <p className="text-lg text-white opacity-90">{description}</p>
                 <div className="absolute bottom-4 left-6 right-6 flex justify-between">
-                    <a href={deploymentLink} className="px-4 py-2 bg-[#FF6F61] rounded-md text-white hover:bg-[#FF6F61]/90">Deployment</a>
-                    <a href={githubLink} className="px-4 py-2 bg-[#FF6F61] rounded-md text-white hover:bg-[#FF6F61]/90">GitHub</a>
+                    <a href={deploymentLink} className="px-4 py-2 bg-white text-[#FF6F61] rounded-md hover:bg-white/90 hover:text-[#FF6F61]">Deployment</a>
+                    <a href={githubLink} className="px-4 py-2 bg-white text-[#FF6F61] rounded-md hover:bg-white/90 hover:text-[#FF6F61]">GitHub</a>
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@ const items = [
         category: "Collab",
         title: "Roama",
         description:
-            "Create an account and explore our travel themed social media app. This was my second group collaboration project. Search friends, view and create your own posts. With our added helpful language translation feature you can communicate with any user, regardless of their location and improve your language skills along the way.",
+            "Create an account and explore our travel themed social media app. This was my second group collaboration project. Search friends, view and create your own posts.",
         deploymentLink: "https://main--roama.netlify.app/",
         githubLink: "https://github.com/amilou86/Roama.git"
     },
