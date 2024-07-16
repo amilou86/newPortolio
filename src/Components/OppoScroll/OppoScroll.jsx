@@ -1,6 +1,7 @@
+import './OppoScroll.scss'
+import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
-import './OppoScroll.scss'
 import { useRef } from "react";
 import amiOrange2 from '../../Components/assets/amiOrange2.png'
 import developer from '../../Components/assets/developer.png'
@@ -39,12 +40,26 @@ export const OppoScroll = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
+  const [showImages, setShowImages] = useState(true); // Track image visibility
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 768; // Adjust breakpoint as needed
+      setShowImages(!isMobile);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize(); // Check on initial mount
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
       <section ref={targetRef} className="flex bg-black text-white">
         <Content content={items} />
-        <Images content={items} scrollYProgress={scrollYProgress} />
+        {showImages && <Images content={items} scrollYProgress={scrollYProgress} />}
       </section>
     </>
   );
