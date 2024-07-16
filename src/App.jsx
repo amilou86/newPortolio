@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar.jsx";
 import Hero from "./Components/Hero/Hero.jsx";
 import ParallaxRain from './Components/Parallax/Parallax.jsx';
 import Carousel from './Components/Carousel/Carousel.jsx'
+import ParallaxPortfolio from './Components/ParallaxPortfolio/ParallaxPortfolio.jsx'
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <OppoScroll />
       </section>
       <section id="Portfolio">
+        <ParallaxPortfolio />
+      </section>
+      <section >
         <Carousel />
       </section>
       {/* <Portfolio /> */}

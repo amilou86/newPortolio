@@ -1,8 +1,8 @@
-import './Parallax.scss';
+import './ParallaxPortfolio.scss';
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const ParallaxRain = () => {
+const ParallaxPortfolio = () => {
     const numDots = 200; // Adjust the number of rain dots
 
     const dots = Array.from({ length: numDots }).map((_, index) => {
@@ -24,9 +24,9 @@ const ParallaxRain = () => {
         <div className="parallax-container">
             <motion.div className="white-background"></motion.div>
             {dots}
-            <h1 className='story'>my story ...</h1>
+            <h1 className='story'>my work ...</h1>
         </div>
     );
 };
 
-export default ParallaxRain;
+export default ParallaxPortfolio;
